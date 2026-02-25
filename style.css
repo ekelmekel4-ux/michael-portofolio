@@ -1,0 +1,362 @@
+/* Michael Portfolio Custom CSS */
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --muted: #71717a;
+    --border: #f4f4f5;
+    --accent: #4f46e5;
+}
+
+body { 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* Typography */
+.headline-lg {
+    font-size: clamp(2.5rem, 8vw, 6.5rem);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+}
+
+.section-label {
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #a1a1aa;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-label::after {
+    content: "";
+    height: 1px;
+    width: 40px;
+    background: #e4e4e7;
+}
+
+/* Elements */
+.card-clean {
+    border: 1px solid var(--border);
+    border-radius: 2rem;
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    background: #ffffff;
+}
+
+.card-clean:hover {
+    border-color: #000;
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.1);
+}
+
+.hero-img-container {
+    border-radius: 2.5rem;
+    overflow: hidden;
+    aspect-ratio: 4/5;
+    background: #f4f4f5;
+    position: relative;
+}
+
+.professional-quote {
+    font-style: italic;
+    border-left: 3px solid #000;
+    padding-left: 2rem;
+    color: var(--muted);
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+/* Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #e4e4e7; border-radius: 10px; }
+
+/* Mobile Menu Animation */
+#mobile-menu {
+    transition: all 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+    clip-path: circle(0% at 100% 0%);
+}
+
+#mobile-menu.open {
+    clip-path: circle(150% at 100% 0%);
+}
+
+/* Admin Panel */
+#admin-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: none;
+    overflow-y: auto;
+}
+
+#admin-panel.active {
+    display: block;
+}
+
+.admin-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 24px;
+    min-height: calc(100vh - 80px);
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4e4e7;
+}
+
+.admin-header h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000;
+}
+
+.admin-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: #71717a;
+}
+
+.admin-close:hover {
+    color: #000;
+}
+
+.admin-section {
+    margin-bottom: 40px;
+}
+
+.admin-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.admin-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.admin-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background: #f4f4f5;
+    border-radius: 12px;
+    gap: 16px;
+}
+
+.admin-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    min-width: 0;
+}
+
+.admin-item-content strong {
+    font-size: 0.875rem;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.admin-item-content span {
+    font-size: 0.75rem;
+    color: #71717a;
+}
+
+.admin-item-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.btn-edit, .btn-delete, .btn-add, .btn-save, .btn-cancel, .btn-reset {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.btn-edit {
+    background: #4f46e5;
+    color: white;
+}
+
+.btn-edit:hover {
+    background: #4338ca;
+}
+
+.btn-delete {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #dc2626;
+}
+
+.btn-add {
+    width: 100%;
+    background: #000;
+    color: white;
+    padding: 14px;
+}
+
+.btn-add:hover {
+    background: #27272a;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.admin-input {
+    padding: 14px 16px;
+    border: 1px solid #e4e4e7;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.admin-input:focus {
+    border-color: #4f46e5;
+}
+
+.admin-form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.btn-save {
+    flex: 1;
+    background: #4f46e5;
+    color: white;
+    padding: 14px;
+}
+
+.btn-save:hover {
+    background: #4338ca;
+}
+
+.btn-cancel {
+    flex: 1;
+    background: #f4f4f5;
+    color: #000;
+    padding: 14px;
+}
+
+.btn-cancel:hover {
+    background: #e4e4e7;
+}
+
+.btn-reset {
+    width: 100%;
+    background: #fef2f2;
+    color: #ef4444;
+    padding: 14px;
+    border: 1px solid #fecaca;
+}
+
+.btn-reset:hover {
+    background: #fee2e2;
+}
+
+.btn-export {
+    width: 100%;
+    background: #10b981;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.btn-export:hover {
+    background: #059669;
+}
+
+.admin-desc {
+    font-size: 0.875rem;
+    color: #71717a;
+    margin-bottom: 16px;
+}
+
+.admin-textarea {
+    width: 100%;
+    min-height: 300px;
+    padding: 16px;
+    border: 1px solid #e4e4e7;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-family: monospace;
+    background: #f4f4f5;
+    resize: vertical;
+    margin-bottom: 16px;
+}
+
+/* Responsive Admin Panel */
+@media (max-width: 640px) {
+    .admin-container {
+        margin: 20px;
+        padding: 24px;
+    }
+    
+    .admin-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .admin-item-actions {
+        width: 100%;
+    }
+    
+    .admin-item-actions button {
+        flex: 1;
+    }
+}
