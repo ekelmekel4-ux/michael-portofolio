@@ -67,9 +67,7 @@ const DEFAULT_DATA = {
     projects: [
         { 
             title: "Church Management", 
-            description: "Aplikasi web yang dikembangkan untuk membantu pengelolaan administrasi gereja secara terstruktur dan efisien. Sistem ini menyediakan fitur manajemen data anggota, jadwal ibadah, dan jadwal kegiatan dengan implementasi CRUD (Create, Read, Update, Delete).
-
-Aplikasi dibangun menggunakan konsep arsitektur MVC untuk memisahkan logika program dan tampilan, sehingga kode lebih terorganisir dan mudah dikembangkan.", 
+            description: "Aplikasi web yang dikembangkan untuk membantu pengelolaan administrasi gereja secara terstruktur dan efisien. Sistem ini menyediakan fitur manajemen data anggota, jadwal ibadah, dan jadwal kegiatan dengan implementasi CRUD (Create, Read, Update, Delete).Aplikasi dibangun menggunakan konsep arsitektur MVC untuk memisahkan logika program dan tampilan, sehingga kode lebih terorganisir dan mudah dikembangkan.", 
             tech: "PHP, MySQL, HTML, CSS, Bootstrap", 
             url: "https://github.com/ekelmekel4-ux/Church-managment-base-mvc-", 
             image: "Daftar Jadwal Ibadah CRUD.png" 
@@ -661,6 +659,7 @@ window.onload = () => {
         }
     });
 };
+
 
 
 
