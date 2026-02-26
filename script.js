@@ -70,7 +70,7 @@ const DEFAULT_DATA = {
             description: "Sistem administrasi terintegrasi untuk mengelola data jemaat, kegiatan, dan catatan keuangan dengan dashboard admin yang intuitif.", 
             tech: "PHP, MySQL", 
             url: "https://github.com/ekelmekel4-ux/Church-managment-base-mvc-", 
-            image: "" 
+            image: "images/Daftar Jadwal Ibadah CRUD.png" 
         },
         { 
             title: "Product Catalog", 
@@ -658,4 +658,5 @@ window.onload = () => {
         }
     });
 };
+
 
