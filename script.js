@@ -78,7 +78,7 @@ Aplikasi dibangun menggunakan konsep arsitektur MVC untuk memisahkan logika prog
             title: "Product Catalog", 
             description: "Aplikasi Katalog Produk yang saya kembangkan menggunakan CodeIgniter 3 dengan konsep MVC untuk mengelola data produk secara terstruktur. Fitur yang diimplementasikan meliputi CRUD, upload gambar dengan validasi, session flash message, serta pengelolaan database MySQL. Project ini menunjukkan pemahaman saya dalam membangun aplikasi web terstruktur menggunakan framework PHP.", 
             tech: "CodeIgniter 3, MVC", 
-            url: "https://github.com/michael-4129a7257", 
+            url: "https://github.com/ekelmekel4-ux/Product-catalog", 
             image: "home.png" 
         }
     ]
@@ -661,6 +661,7 @@ window.onload = () => {
         }
     });
 };
+
 
 
 
