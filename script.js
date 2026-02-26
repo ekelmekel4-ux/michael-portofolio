@@ -77,11 +77,10 @@ const DEFAULT_DATA = {
             description: "Sistem katalog efisien untuk mengorganisir informasi produk, pelacakan stok, dan manajemen inventaris terkategori.", 
             tech: "CodeIgniter 3, MVC", 
             url: "https://github.com/michael-4129a7257", 
-            image: "" 
+            image: "https://github.com/ekelmekel4-ux/Product-catalog/blob/main/home.png" 
         }
     ]
 };
-
 // --- LOCAL STORAGE MANAGEMENT ---
 const STORAGE_KEY = 'michael_portfolio_data';
 
@@ -658,6 +657,7 @@ window.onload = () => {
         }
     });
 };
+
 
 
 
