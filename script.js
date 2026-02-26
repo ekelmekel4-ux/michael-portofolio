@@ -54,13 +54,38 @@ const DEFAULT_DATA = {
         { 
             title: "Python Data Structures", 
             meta: "University of Michigan • 2024", 
-            url: "file:///C:/Users/Samuel/Documents/file%20Michael/file%20kuliah/Biodata/sertifikat%20coursera/sertifikat%20python%20data%20structures%20(Michael).pdf" 
+            url: "https://coursera.org/share/e7f5680aa101b55324fd4d686d5d297b" 
+        },
+        { 
+            title: "Python for Beginners: Data Structures", 
+            meta: "Coursera • 2025", 
+            url: "https://coursera.org/share/22366812158f646b4788918b1084498f" 
+        },
+        { 
+            title: "Introduction to Information Technology and AWS Cloud", 
+            meta: " Amazon Web Services  •  2024", 
+            url: "https://coursera.org/share/73b5c0ec6f27c95952ca5c71ecb09025" 
+        },
+        { 
+            title: "Programming for Everybody (Getting Started with Python)", 
+            meta: "University of Michigan • 2024", 
+            url: "https://coursera.org/share/fe5875f18b0ce3b07fa25c8a22953b83" 
+        },
+        { 
+            title: "Building and Managing User Interfaces", 
+            meta: "Packt  • 2025", 
+            url: "https://coursera.org/share/198b57a5d6e279fe80fa6ae7829dff3f" 
+        },
+        { 
+            title: "Digital Business Models", 
+            meta: "Lund University • 2025", 
+            url: "https://coursera.org/share/436e09289da8b0366206ac1f36557631" 
         }
     ],
     publications: [
         { 
             title: "Antara Script dan Frustrasi: Strategi Menghadapi Tantangan Coding", 
-            meta: "Campus Tech Review • 2024", 
+            meta: "Publis Kumparan.com • 2024", 
             url: "https://kumparan.com/michael-ekel/245mBn1nmPv?utm_source=Desktop&utm_medium=copy-to-clipboard&shareID=3ix1tQHbGHMN" 
         }
     ],
@@ -78,10 +103,9 @@ const DEFAULT_DATA = {
             tech: "CodeIgniter 3, MVC", 
             url: "https://github.com/ekelmekel4-ux/Product-catalog", 
             image: "home.png" 
-        }   
+        }
     ]
 };
-
 
 // --- DATA MANAGEMENT ---
 // Data sekarang langsung dari DEFAULT_DATA di atas
@@ -644,6 +668,7 @@ window.onload = () => {
         }
     });
 };
+
 
 
 
