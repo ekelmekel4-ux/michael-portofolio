@@ -70,19 +70,21 @@ const DEFAULT_DATA = {
             description: "Aplikasi web yang dikembangkan untuk membantu pengelolaan administrasi gereja secara terstruktur dan efisien. Sistem ini menyediakan fitur manajemen data anggota, jadwal ibadah, dan jadwal kegiatan dengan implementasi CRUD (Create, Read, Update, Delete).
 
 Aplikasi dibangun menggunakan konsep arsitektur MVC untuk memisahkan logika program dan tampilan, sehingga kode lebih terorganisir dan mudah dikembangkan.", 
-            tech: "PHP, MySQL, HTML, CSS, Bootstrap, Arsitektur MVC (Local Development)", 
+            tech: "PHP, MySQL, HTML, CSS, Bootstrap", 
             url: "https://github.com/ekelmekel4-ux/Church-managment-base-mvc-", 
             image: "Daftar Jadwal Ibadah CRUD.png" 
         },
         { 
             title: "Product Catalog", 
-            description: "Sistem katalog efisien untuk mengorganisir informasi produk, pelacakan stok, dan manajemen inventaris terkategori.", 
+            description: "Aplikasi Katalog Produk yang saya kembangkan menggunakan CodeIgniter 3 dengan konsep MVC untuk mengelola data produk secara terstruktur. Fitur yang diimplementasikan meliputi CRUD, upload gambar dengan validasi, session flash message, serta pengelolaan database MySQL. Project ini menunjukkan pemahaman saya dalam membangun aplikasi web terstruktur menggunakan framework PHP.", 
             tech: "CodeIgniter 3, MVC", 
             url: "https://github.com/michael-4129a7257", 
             image: "home.png" 
         }
     ]
 };
+
+
 // --- LOCAL STORAGE MANAGEMENT ---
 const STORAGE_KEY = 'michael_portfolio_data';
 
@@ -659,6 +661,7 @@ window.onload = () => {
         }
     });
 };
+
 
 
 
