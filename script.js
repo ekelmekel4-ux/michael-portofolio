@@ -3,7 +3,7 @@
  */
 
 // --- DATA STATIC ---
-// Data default - akan diganti dengan data dari LocalStorage jika ada
+// Data otomatis diperbarui dari dokumen sertifikat yang diunggah
 const DEFAULT_DATA = {
     certificates: [
         { 
@@ -51,29 +51,34 @@ const DEFAULT_DATA = {
             meta: "University of Geneva • 2025", 
             url: "https://coursera.org/verify/L2AXZA02NA23" 
         },
+        { 
+            title: "Python Data Structures", 
+            meta: "University of Michigan • 2024", 
+            url: "file:///C:/Users/Samuel/Documents/file%20Michael/file%20kuliah/Biodata/sertifikat%20coursera/sertifikat%20python%20data%20structures%20(Michael).pdf" 
+        }
     ],
     publications: [
         { 
             title: "Antara Script dan Frustrasi: Strategi Menghadapi Tantangan Coding", 
             meta: "Campus Tech Review • 2024", 
             url: "https://kumparan.com/michael-ekel/245mBn1nmPv?utm_source=Desktop&utm_medium=copy-to-clipboard&shareID=3ix1tQHbGHMN" 
-        },
+        }
     ],
     projects: [
         { 
             title: "Church Management", 
-            description: "Sistem administrasi terintegrasi untuk mengelola data jemaat, kegiatan, dan catatan keuangan dengan dashboard admin yang intuitif.",
-            tech: "PHP, MySQL",
-            url: "https://github.com/ekelmekel4-ux/Church-managment-base-mvc-",
-            image: ""
+            description: "Sistem administrasi terintegrasi untuk mengelola data jemaat, kegiatan, dan catatan keuangan dengan dashboard admin yang intuitif.", 
+            tech: "PHP, MySQL", 
+            url: "https://github.com/ekelmekel4-ux/Church-managment-base-mvc-", 
+            image: "" 
         },
         { 
             title: "Product Catalog", 
-            description: "Sistem katalog efisien untuk mengorganisir informasi produk, pelacakan stok, dan manajemen inventaris terkategori.",
-            tech: "CodeIgniter 3, MVC",
-            url: "https://github.com/michael-4129a7257",
-            image: ""
-        },
+            description: "Sistem katalog efisien untuk mengorganisir informasi produk, pelacakan stok, dan manajemen inventaris terkategori.", 
+            tech: "CodeIgniter 3, MVC", 
+            url: "https://github.com/michael-4129a7257", 
+            image: "" 
+        }
     ]
 };
 
@@ -653,3 +658,4 @@ window.onload = () => {
         }
     });
 };
+
