@@ -83,47 +83,22 @@ const DEFAULT_DATA = {
 };
 
 
-// --- LOCAL STORAGE MANAGEMENT ---
-const STORAGE_KEY = 'michael_portfolio_data';
+// --- DATA MANAGEMENT ---
+// Data sekarang langsung dari DEFAULT_DATA di atas
+// Semua perubahan yang Anda buat akan otomatis tersimpan
+// Setelah Anda push ke GitHub, visitor lain akan melihat perubahan
 
-function getStoredData() {
-    try {
-        const stored = localStorage.getItem(STORAGE_KEY);
-        if (stored) {
-            return JSON.parse(stored);
-        }
-    } catch (e) {
-        console.warn('Error reading from localStorage:', e);
-    }
-    return null;
-}
-
-function saveData(data) {
-    try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-    } catch (e) {
-        console.warn('Error saving to localStorage:', e);
-    }
-    // Update MY_DATA reference
-    if (typeof MY_DATA !== 'undefined') {
-        MY_DATA.certificates = data.certificates || [];
-        MY_DATA.publications = data.publications || [];
-        MY_DATA.projects = data.projects || [];
-    }
-}
-
+// Fungsi untuk inisialisasi data - langsung dari DEFAULT_DATA
 function initializeData() {
-    const stored = getStoredData();
-    if (stored && stored.certificates && stored.publications && stored.projects) {
-        return stored;
-    }
-    // Simpan data default ke localStorage jika tidak ada data tersimpan
-    try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_DATA));
-    } catch (e) {
-        console.warn('Error saving default data:', e);
-    }
-    return DEFAULT_DATA;
+    return JSON.parse(JSON.stringify(DEFAULT_DATA));
+}
+
+// Fungsi untuk menyimpan data (sekarang hanya untuk kompatibilitas)
+function saveData(data) {
+    // Data sekarang tidak disimpan ke localStorage
+    // Semua perubahan hanya berlaku di browser saat ini
+    // Untuk membuat perubahan permanen, gunakan Export ke GitHub
+    console.log('Data updated. Use Export to GitHub to save changes permanently.');
 }
 
 // --- DATA OBJECT ---
@@ -538,8 +513,7 @@ function submitEditProject(index) {
 
 function resetToDefault() {
     if (confirm('Apakah Anda yakin ingin mereset ke data default? Semua perubahan akan hilang.')) {
-        saveData(DEFAULT_DATA);
-        MY_DATA = { ...DEFAULT_DATA };
+        MY_DATA = initializeData();
         renderCredentials();
         renderProjects();
         renderAdminPanel();
