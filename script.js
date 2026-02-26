@@ -578,7 +578,18 @@ ${projData}
     panel.innerHTML = `
         <div class="admin-section">
             <h3 class="admin-title">📋 Kode Data untuk GitHub</h3>
-            <p class="admin-desc">Copy kode di bawah ini dan paste ke file script.js (bagian DEFAULT_DATA):</p>
+            <div class="admin-instructions">
+                <p><strong>Langkah-langkah:</strong></p>
+                <ol>
+                    <li>Click tombol "Copy ke Clipboard" di bawah</li>
+                    <li>Buka file <code>script.js</code> di editor (VS Code)</li>
+                    <li>Cari bagian <code>const DEFAULT_DATA = {...}</code></li>
+                    <li>Ganti semua kode DEFAULT_DATA dengan yang baru</li>
+                    <li>Simpan file</li>
+                    <li>Push ke GitHub (commit & push)</li>
+                </ol>
+                <p class="text-amber-600 mt-2"><strong>⚠️ PENTING: Jangan lupa push ke GitHub agar visitor lain bisa melihat update!</strong></p>
+            </div>
             <textarea id="export-code" class="admin-textarea" readonly>${exportCode}</textarea>
             <div class="admin-form-actions">
                 <button onclick="copyToClipboard()" class="btn-save">📋 Copy ke Clipboard</button>

@@ -327,6 +327,34 @@ body {
     margin-bottom: 16px;
 }
 
+.admin-instructions {
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 0.875rem;
+    color: #000;
+}
+
+.admin-instructions ol {
+    margin: 12px 0;
+    padding-left: 20px;
+}
+
+.admin-instructions li {
+    margin-bottom: 8px;
+    color: #52525b;
+}
+
+.admin-instructions code {
+    background: #fef3c7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+
 .admin-textarea {
     width: 100%;
     min-height: 300px;
